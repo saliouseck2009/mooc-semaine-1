@@ -8,7 +8,6 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
-import org.apache.catalina.connector.Response;
 
 // TODO: this class should extends something to be a usable servlet.
 // TODO: add an annotation here to map your servlet on an URL.
