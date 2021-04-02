@@ -14,7 +14,7 @@ import javax.servlet.http.*;
 @WebServlet("/home")
 public class BagServlet extends HttpServlet{
 
-	public static String jspView = "/WEB-INF/bag.jsp";
+	public static String jspView = "/WEB-INF/test.jsp";
 	
 	
 //	@Override
@@ -24,18 +24,9 @@ public class BagServlet extends HttpServlet{
 //    }
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-		
-//	HttpSession session = req.getSession();
-//	System.out.println("in the do GET");
-//	String login = req.getParameter( "txtLogin" );
-//    String password = req.getParameter( "txtPassword" );
-//    if ( login == null ) login = "";
-//    if ( password == null ) password = "";
 		this.getServletContext().getRequestDispatcher(jspView).forward(req, res);
-
-
-		
 	}
+
 
 	
 	@Override
