@@ -11,8 +11,11 @@
 <body>
 
 <h1>Sac</h1>
-
-
+<c:out value="${ requestScope.getAttribute(\"myBag\") }" />
+<%--<%--%>
+<%--    Bag attribut = (Bag) request.getAttribute("myBag");--%>
+<%--    attribut.print(out);--%>
+<%--%>--%>
 
     <form method='POST' action='home'>
         <label for='ref'>Ref</label>
